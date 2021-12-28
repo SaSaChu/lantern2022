@@ -89,6 +89,9 @@ p { display: inline-block; padding: 0; margin: 0; }
 
 a { cursor: pointer; text-decoration: none; outline: 0; }
 
+.linkMore { display: inline-block; color: #de2dbd; }
+.linkMore:hover { text-decoration: underline; }
+
 .link_l { display: inline-block; font-size: 1.3rem; font-weight: bolder; color: #392d2a; float: right; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_l { float: left; } }
 .link_l:hover { color: #e233c5; }
@@ -266,6 +269,10 @@ header { display: inline-block; width: 100%; max-width: 1170px; margin: 0 auto; 
 .p_boxs4:after { display: inline-block; content: ''; background-color: rgba(155, 155, 155, 0.5); width: 1px; height: 100%; position: absolute; right: 0; top: 0; }
 .p_boxs4:last-child:after { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_boxs4 { width: calc(100% / 2); } }
+
+.boxs50 { display: inline-block; width: calc(50% - 30px * 1 / 2); float: left; }
+.boxs50:first-child { margin-right: 30px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .boxs50 { width: 100%; margin-right: 0; } }
 
 .boxs5 { display: inline-block; width: calc(100% / 5); float: left; position: relative; }
 .boxs5:after { display: inline-block; content: ''; background-color: rgba(155, 155, 155, 0.5); width: 1px; height: 100%; position: absolute; right: 0; top: 0; }
