@@ -59,6 +59,49 @@ $brown: rgba(57, 45, 42, 1);
   display: inline-block;
 }
 
+.noteBoxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 1170px;
+  background-color: white;
+  margin-bottom: 30px;
+  text-align: left;
+  padding: 10px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 15px;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+
+    @include range-width(0, 450px) {
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      color: #cc6552;
+    }
+
+    &:before {
+      display: inline-block;
+      content: '';
+      width: 10px;
+      height: 40px;
+      margin-right: 10px;
+      background-color: #e10c31;
+
+      @include range-width(0, 450px) {
+        height: 30px;
+      }
+    }
+  }
+}
+
 
 // other
 .all_boxs {

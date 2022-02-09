@@ -9,6 +9,14 @@ body.page_bg { min-height: 100%; margin: 0; padding: 0; background: #dc705c url(
 
 .teat { display: inline-block; }
 
+.noteBoxs { display: inline-block; width: 100%; max-width: 1170px; background-color: white; margin-bottom: 30px; text-align: left; padding: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .noteBoxs { margin-bottom: 15px; } }
+.noteBoxs a { display: inline-block; width: 100%; font-size: 2rem; color: black; font-weight: bold; }
+@media screen and (max-width: 449px) and (min-width: 0) { .noteBoxs a { font-size: 1.4rem; } }
+.noteBoxs a:hover { color: #cc6552; }
+.noteBoxs a:before { display: inline-block; content: ''; width: 10px; height: 40px; margin-right: 10px; background-color: #e10c31; }
+@media screen and (max-width: 449px) and (min-width: 0) { .noteBoxs a:before { height: 30px; } }
+
 .all_boxs { display: inline-block; width: 100%; }
 .all_boxs.m-w115 { width: 115px; }
 .all_boxs.w90 { width: 90%; }
